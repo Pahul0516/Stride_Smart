@@ -9,6 +9,7 @@ from app.api.Api_routes.touristRouteEndpoint import tourist_route_bp
 from app.api.Frontend.front import frontend_bp
 
 def register_routes(app: Flask):
+
     app.register_blueprint(green_routes_bp)
     app.register_blueprint(safest_route_bp)
     app.register_blueprint(accessible_route_bp)
@@ -16,4 +17,4 @@ def register_routes(app: Flask):
     app.register_blueprint(thermal_comfort_route_bp)
     app.register_blueprint(combined_route_bp)
     app.register_blueprint(tourist_route_bp)
-    app.register_blueprint(frontend_bp)
+    app.register_blueprint(frontend_bp, url_prefix='/projects/2')

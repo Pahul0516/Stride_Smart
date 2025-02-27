@@ -93,12 +93,12 @@
     <button id="closeMenu" class="absolute top-6 left-8 text-4xl text-[#f0e7d8] hover:scale-110 transition-transform hover:opacity-80">&times;</button>
 
     <nav class="flex flex-col space-y-8 text-[#f0e7d8] text-4xl font-bold items-center">
-        <a href="/login" class="relative group">
+        <a href="{{ url_for('app.login') }}" class="relative group">
             LOG IN
             <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#f0e7d8] transition-all duration-300 group-hover:w-full"></span>
         </a>
 
-        <a href="/map" class="relative group">
+        <a href="{{ url_for('app.map_page') }}" class="relative group">
             NAVIGATE
             <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#f0e7d8] transition-all duration-300 group-hover:w-full"></span>
         </a>
@@ -148,7 +148,7 @@
             YOUR PRIORITIES YOUR PATH
         </h2>
         <div class="mt-10 flex justify-center">
-            <a href="/login" class="px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 text-lg font-bold bg-transparent border-2 border-[#3A4D39] text-[#3A4D39] rounded-full transition transform hover:scale-110">
+            <a href="{{ url_for('app.login') }}" class="px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 text-lg font-bold bg-transparent border-2 border-[#3A4D39] text-[#3A4D39] rounded-full transition transform hover:scale-110">
                 Get Started
             </a>
         </div>
@@ -325,7 +325,7 @@
         </p>
 
         <div class="mt-20 flex justify-center space-x-3">
-            <a href="/map" class="px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 text-lg font-bold bg-transparent border-2 border-[#FCFAEE] text-[#FCFAEE] rounded-full transition transform hover:scale-110 hover:bg-[#FCFAEE] hover:text-[#3A4D39]">
+            <a href="{{ url_for('app.map_page') }}" class="px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 text-lg font-bold bg-transparent border-2 border-[#FCFAEE] text-[#FCFAEE] rounded-full transition transform hover:scale-110 hover:bg-[#FCFAEE] hover:text-[#3A4D39]">
                 Navigate
             </a>
             <button id="backToTop" class="px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 text-lg font-bold bg-transparent border-2 border-[#FCFAEE] text-[#FCFAEE] rounded-full transition transform hover:scale-110 hover:bg-[#FCFAEE] hover:text-[#3A4D39]">
