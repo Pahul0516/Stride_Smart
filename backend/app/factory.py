@@ -9,6 +9,7 @@ from app.routes import register_routes
 def create_app():
 
     Aplication = Flask(__name__, template_folder='../../frontend/templates', static_folder='../../frontend/static')
+    Aplication.config['APPLICATION_ROOT'] = '/projects/2'
     CORS(Aplication)
     
 

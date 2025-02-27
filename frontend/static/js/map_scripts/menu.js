@@ -1,4 +1,4 @@
-import {clearAllOverlays} from "/projects/2/static/js/map_scripts/overlays.js";
+import {clearAllOverlays} from "/static/js/map_scripts/overlays.js";
 
 const menus = [
     { buttonId: "filtersButton", menuId: "filterMenu", closeId: "closeFilterMenu", badgeId: "filterBadge", activeSet: new Set() },
