@@ -1,5 +1,5 @@
-import {setupTouristPopup, removeMarkers, markers, activeTouristCategories} from "/static/js/map_scripts/tourist.js";
-import {map} from "/static/js/map_scripts/map.js";
+import {setupTouristPopup, removeMarkers, markers, activeTouristCategories} from "/projects/2/static/js/map_scripts/tourist.js";
+import {map} from "/projects/2/static/js/map_scripts/map.js";
 
 
 export let overlayLayers = {};

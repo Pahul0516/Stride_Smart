@@ -1,5 +1,5 @@
-import { map } from "/static/js/map_scripts/map.js";
-import { activateTouristButton, deactivateTouristButton } from "/static/js/map_scripts/menu.js";
+import { map } from "/projects/2/static/js/map_scripts/map.js";
+import { activateTouristButton, deactivateTouristButton } from "/projects/2/static/js/map_scripts/menu.js";
 
 export let markers = [];
 export let activeTouristCategories = new Set();
