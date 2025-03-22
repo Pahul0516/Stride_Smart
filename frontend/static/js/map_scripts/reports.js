@@ -1,4 +1,4 @@
-import {hideOverview, showOverview} from "/projects/2/static/js/map_scripts/map.js";
+import {hideOverview, showOverview} from "./map.js";
 
 const hazardState = {
     currentLocation: null,
@@ -25,6 +25,7 @@ export function showHazardReportForm() {
 
     document.getElementById('hazard-modal').classList.remove('hidden');
     setupHazardFormListeners();
+    checkFormValidity();
 }
 
 export function initializeHazardModal() {
@@ -152,7 +153,7 @@ function handleFormSubmit(event) {
     document.getElementById("hazard-form").reset();
     document.getElementById("hazard-modal").classList.add("hidden");
 
-    showCustomAlert("Not all heroes wear capes. Some just report hazards!", "success");
+    showCustomAlert("Not all heroes wear capes. Some just report hazards.", "success");
 }
 
 export function showCustomAlert(message, type = "error") {
@@ -168,7 +169,7 @@ export function showCustomAlert(message, type = "error") {
     alertMessage.textContent = message;
 
     if (type === "success") {
-        document.getElementById("alert-heading").textContent = "Report submitted successfully";
+        document.getElementById("alert-heading").textContent = "Report submitted successfully!";
         alertIcon.src = "../icons/check.png";
     } else {
         document.getElementById("alert-heading").textContent = "Error";
